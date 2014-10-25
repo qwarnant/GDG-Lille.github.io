@@ -1,18 +1,20 @@
-<div class="span12">
+<div class="col-lg-12 col-md-12 well">
     <p>&nbsp;</p>
     <div class="gdg_loading" ng-show="loading"></div>
     <div class="row">
-        <img ng-show="cover.url" class="span12" ng-src="{{cover.url}}">
-        <div class="span12 hidden-phone" id="cover" ng-show="cover.url">
-            <div id="cover-content">
-                <h1 class="span12">{{cover.title}}</h1>
-                <p class="span12">{{cover.subtitle}}</p>
-                <p class="span12">
-                    <a class="btn btn-primary btn-large" ng-href="{{cover.button.url}}" target="_blank">{{cover.button.text}}</a>
-                </p>
-            </div>
+        <div class="jumbotron" ng-show="cover.url">
+            <img src="../images/gdg-lille.png" class="img-responsive" alt="Google+ Cover Image">
+            <h1>{{cover.title}}</h1>
+            <p>{{cover.subtitle}}</p>
+            <p><a ng-href="{{cover.button.url}}" class="btn btn-primary btn-lg" role="button" target="_blank">{{cover.button.text}} &raquo;</a></p>
         </div>
         <hr>
-        <p class="span12" ng-bind-html-unsafe="desc"></p>
+        <p class="col-lg-12 col-md-12" ng-bind-html="desc"></p>
+        <h4>Sponsors:</h4>
+        <div>
+            <a href="https://developers.google.com/"><img class="sponsor" src="../images/Google-Developers.png" alt="Google Developers"></a>
+            <a href="http://www.jetbrains.com/"><img class="sponsor" src="../images/sponsor1.png" alt="Sponsor Image"></a>
+            <a href="http://www.oreilly.com/store/"><img class="sponsor" src="../images/sponsor2.gif" alt="Sponsor Image"></a>
+        </div>
     </div>
 </div>
