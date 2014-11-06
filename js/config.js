@@ -10,8 +10,7 @@ boomerang.factory('Config', function () {
             title: 'Google Developer Group Lille',
             subtitle: 'Learn. Imagine. Create. Enjoy.',
             button: {
-                text: 'Nous rejoindre',
-                url: '#'
+                text: 'Nous rejoindre'
             }
         }
     };

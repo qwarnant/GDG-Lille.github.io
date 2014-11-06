@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 40px;
+}
+
+a {
+    color: #8888ff;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
