@@ -2,7 +2,7 @@ $(document).ready(function () {
     var camera, scene, renderer;
     var controls;
 
-    var particlesTotal = 128;
+    var particlesTotal = 32;
     var positions = [];
     var objects = [];
     var current = 0;

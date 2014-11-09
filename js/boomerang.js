@@ -14,6 +14,7 @@ var boomerang = angular.module('gdgBoomerang', ['ngSanitize', 'ngRoute', 'ui.boo
 boomerang.controller('MainControl', function ($rootScope, $scope, Config) {
     $scope.chapter_name = Config.name;
     $scope.google_plus_link = 'https://plus.google.com/' + Config.id;
+    $scope.meetup_link = 'http://www.meetup.com/GDG-Lille/';
     $scope.isNavCollapsed = true;
     $rootScope.canonical = Config.domain;
 });
