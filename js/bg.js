@@ -7,6 +7,11 @@ $(document).ready(function () {
     var objects = [];
     var current = 0;
 
+    // Init material design UI
+    $.material.init();
+
+
+    // Init WebGL BG
     if (!Detector.webgl) {
         Detector.addGetWebGLMessage();
     }
